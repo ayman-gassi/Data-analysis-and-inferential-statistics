@@ -41,20 +41,6 @@ def EcartType(data):
 def Etendu(data):
     return max(data) - min(data)
 
-# Main
-data_input = input("Entrez les éléments séparés par des espaces : ")
-Data = list(map(int, data_input.split())) 
-print("Data")
-print(Data)
-print("Sorted Data")
-print(sorted(Data))
-print("La moyenne = ",Moyenne(Data))
-print("La mediane = ",Mediane(Data))
-print("Le mode" , *Mode(Data))
-print("La variance" , Variance(Data))
-print("L'Ecart-Type" , EcartType(Data))
-print("L'Etendu" , Etendu(Data))
-
 
 
 

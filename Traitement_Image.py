@@ -58,6 +58,18 @@ for i in range(50):
     image_color[50:99 - i, i] = [255, 0, 0]     
 
 
+# Morocco Flag (Colors)
+morocco_image_color = np.ones((hauteur, largeur, 3), dtype=np.uint8) *[255, 0, 0] 
+morocco_image_color[40,20:80] = [0, 128, 0]
+for i in range(23):
+    morocco_image_color[20 + 3 * i, 50 - i] = [0, 128, 0]
+    morocco_image_color[20 + 3 * i, 50 + i] =[0, 128, 0]
+for i in range(50):
+    morocco_image_color[40 + i , 20 + i] =[0, 128, 0]  
+    morocco_image_color[40 + i, 80 - i] =[0, 128, 0]
+
+
+
 plt.figure(figsize=(15, 10))
 
 plt.subplot(2, 3, 1)
@@ -79,6 +91,10 @@ plt.title('Black & White Palestine Flag')
 plt.subplot(2, 3, 5)
 plt.imshow(image_color)
 plt.title('Colored Palestine Flag')
+
+plt.subplot(2, 3, 6)
+plt.imshow(morocco_image_color)
+plt.title('Colored morocco Flag')
 
 plt.tight_layout()
 plt.show()

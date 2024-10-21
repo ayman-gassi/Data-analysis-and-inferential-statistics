@@ -1,5 +1,5 @@
-import TendenceCentrale_Variabilite
-import AnalyseCombinatoire
+import Cours1_TendenceCentrale_Variabilite
+import Cours2_AnalyseCombinatoire
 
 
 print('-----------------------------------------------------------')
@@ -9,12 +9,12 @@ print("Data")
 print(Data)
 print("Sorted Data")
 print(sorted(Data))
-print("La moyenne = ",TendenceCentrale_Variabilite.Moyenne(Data))
-print("La mediane = " ,TendenceCentrale_Variabilite.Mediane(Data))
-print("Le mode" , *TendenceCentrale_Variabilite.Mode(Data))
-print("La variance" , TendenceCentrale_Variabilite.Variance(Data))
-print("L'Ecart-Type" , TendenceCentrale_Variabilite.EcartType(Data))
-print("L'Etendu" , TendenceCentrale_Variabilite.Etendu(Data))
+print("La moyenne = ",Cours1_TendenceCentrale_Variabilite.Moyenne(Data))
+print("La mediane = " ,Cours1_TendenceCentrale_Variabilite.Mediane(Data))
+print("Le mode" , *Cours1_TendenceCentrale_Variabilite.Mode(Data))
+print("La variance" , Cours1_TendenceCentrale_Variabilite.Variance(Data))
+print("L'Ecart-Type" , Cours1_TendenceCentrale_Variabilite.EcartType(Data))
+print("L'Etendu" , Cours1_TendenceCentrale_Variabilite.Etendu(Data))
 print('-----------------------------------------------------------')
 # print("-> calcule la puissance")
 # nbr = int(input("Entre un nombre : "))
@@ -22,8 +22,8 @@ print('-----------------------------------------------------------')
 # print("la puissance = " , AnalyseCombinatoire.puissance(nbr,puissance))
 print("-> calcule de factoriel")
 nbr = int(input("Entre un nombre : "))
-print("factoriel = " , AnalyseCombinatoire.factoriel(nbr))
+print("factoriel = " , Cours2_AnalyseCombinatoire.factoriel(nbr))
 print("-> calcule de Combinaison")
 r = int(input("Entre  r : "))
 n = int(input("Entre n : "))
-print("combinaison = " , AnalyseCombinatoire.combinaison(n,r))
+print("combinaison = " , Cours2_AnalyseCombinatoire.combinaison(n,r))
